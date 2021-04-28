@@ -6,13 +6,9 @@ import Unit.Interface.Terran;
 
 public class BattleCruiser extends AirUnit implements Terran, BasicControl, Repairable {
 
-    final int MAXHP = 500;
 
-    public BattleCruiser(String nickName, int x, int y) {
-        super(nickName, x, y);
-        this.unitName = "배틀크루저";
-        this.currentHp = MAXHP;
-        this.atkDamage = 25;
+    public BattleCruiser(String nickName, String unitName, int MAXHP, int currentHp, int atkDamage, String atkTarget, int x, int y) {
+        super(nickName, unitName, MAXHP, currentHp, atkDamage, atkTarget, x, y);
     }
 
 

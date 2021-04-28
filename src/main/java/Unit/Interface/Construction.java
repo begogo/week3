@@ -4,6 +4,6 @@ import Unit.*;
 
 public interface Construction {
     default void construct(Unit unit){
-        System.out.println(unit.nickName+": 건설임무 시작");
+        System.out.println(unit.getNickName()+": 건설 시작!");
     }
 }

@@ -5,12 +5,9 @@ import Unit.Interface.*;
 public class Overlord extends AirUnit implements Zerg, Move, Stop, Detectable {
 
     int increaseSupply = 8;
-    final int MAXHP = 200;
 
-    public Overlord(String nickName, int x, int y){
-        super(nickName, x, y);
-        this.unitName = "오버로드";
-        this.currentHp = MAXHP;
+    public Overlord(String nickName, String unitName, int MAXHP, int currentHp, int atkDamage, String atkTarget, int x, int y) {
+        super(nickName, unitName, MAXHP, currentHp,  atkDamage, atkTarget, x, y);
     }
 
 

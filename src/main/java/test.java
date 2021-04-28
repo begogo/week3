@@ -1,4 +1,5 @@
-public class test {
+/*
+ public class test {
     public static void main(String[] args) {
         Animal hAnimal1 = new Human();
         Human hAnimal2 = new Human();
@@ -60,3 +61,5 @@ class Eagle extends Animal {
         System.out.println("독수리가 날개를 쭉 펴고 멀리 날아갑니다.");
     }
 }
+
+ */
