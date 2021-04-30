@@ -5,7 +5,7 @@ import Unit.*;
 public interface Stop {
 
     default void stop(Unit unit){
-        System.out.println(unit.nickName+" : 정지 at Location("+unit.x+", "+unit.y+")" );
+        System.out.println(unit.getNickName()+" : 정지 at Location("+unit.getX()+", "+unit.getY()+")" );
     }
 
 }
