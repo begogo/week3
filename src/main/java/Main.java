@@ -10,14 +10,24 @@ public class Main {
         Scv scv2 = new Scv("SCV @2", "SCV", 60, 60, 5, "ground",33, 111);
         BattleCruiser bc = new BattleCruiser("Battlecruiser @1", "배틀크루저", 500, 500, 25,"both", 50, 100);
         Marine marine = new Marine("Marine @1", "마린", 40, 40, 5,"both", 123, 123);
+        Zealot zealot = new Zealot("Zealot @1", "질럿", 100, 100, 60, 60, 16, "ground", 444, 555);
+
         Mineral mineral1 = new Mineral("미네랄1", 22, 33);
         Gas gas1 = new Gas("가스1", 55, 44);
 
         System.out.println("-----------------------------------상 태 출 력--------------------------------------------");
-        System.out.println(scv1.tellNickName() + " / 종족:"+scv1.RACE + scv1.tellRest() + " / 활동영역:"+scv1.getActivityArea());
-        System.out.println(scv2.tellNickName() + " / 종족:"+scv2.RACE + scv2.tellRest() + " / 활동영역:"+scv2.getActivityArea());
-        System.out.println(bc.tellNickName() + " / 종족:"+bc.RACE + bc.tellRest() + " / 활동영역:"+bc.getActivityArea());
-        System.out.println(marine.tellNickName() + " / 종족:"+marine.RACE + marine.tellRest() + " / 활동영역:"+marine.getActivityArea());
+//        System.out.println(scv1.tellNickName() + " / 종족:"+scv1.RACE + scv1.tellRest() + " / 활동영역:"+scv1.getActivityArea());
+//        System.out.println(scv2.tellNickName() + " / 종족:"+scv2.RACE + scv2.tellRest() + " / 활동영역:"+scv2.getActivityArea());
+//        System.out.println(bc.tellNickName() + " / 종족:"+bc.RACE + bc.tellRest() + " / 활동영역:"+bc.getActivityArea());
+//        System.out.println(marine.tellNickName() + " / 종족:"+marine.RACE + marine.tellRest() + " / 활동영역:"+marine.getActivityArea());
+//        System.out.println(zealot.protossTell(zealot) + " / 활동영역:"+zealot.getActivityArea());
+//        System.out.println();
+        System.out.println(scv1.tellNew(scv1));
+        System.out.println(scv2.tellNew(scv2));
+        System.out.println(bc.tellNew(bc));
+        System.out.println(marine.tellNew(marine));
+        System.out.println(zealot.tellNew(zealot));
+
 
         System.out.println("------------------------------------일 꾼 활 동-------------------------------------------");
         scv1.gather(scv1, mineral1);

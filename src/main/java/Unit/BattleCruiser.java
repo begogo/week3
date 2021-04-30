@@ -4,11 +4,11 @@ import Unit.Interface.BasicControl;
 import Unit.Interface.Repairable;
 import Unit.Interface.Terran;
 
-public class BattleCruiser extends AirUnit implements Terran, BasicControl, Repairable {
+public class BattleCruiser extends TerranAirUnit implements Terran, BasicControl, Repairable {
 
 
-    public BattleCruiser(String nickName, String unitName, int MAXHP, int currentHp, int atkDamage, String atkTarget, int x, int y) {
-        super(nickName, unitName, MAXHP, currentHp, atkDamage, atkTarget, x, y);
+    public BattleCruiser(String nickName, String unitName, int maxHp, int currentHp, int atkDamage, String atkTarget, int x, int y) {
+        super(nickName, unitName, maxHp, currentHp, atkDamage, atkTarget, x, y);
     }
 
 

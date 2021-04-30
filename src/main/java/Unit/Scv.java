@@ -2,10 +2,10 @@ package Unit;
 
 import Unit.Interface.*;
 
-public class Scv extends GroundUnit implements Terran, BasicControl, Worker, Repairable, Healable {
+public class Scv extends TerranGroundUnit implements Terran, BasicControl, Worker, Repairable, Healable {
 
-    public Scv(String nickName, String unitName, int MAXHP, int currentHp, int atkDamage, String atkTarget, int x, int y) {
-        super(nickName, unitName, MAXHP, currentHp, atkDamage, atkTarget, x, y);
+    public Scv(String nickName, String unitName, int maxHp, int currentHp, int atkDamage, String atkTarget, int x, int y) {
+        super(nickName, unitName, maxHp, currentHp, atkDamage, atkTarget, x, y);
     }
 
     public void repair(Unit repairman, Unit target){
